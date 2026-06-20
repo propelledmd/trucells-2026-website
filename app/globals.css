@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #0CB4C4;
+  --color-teal-dark: #0A9BAA;
+  --color-teal-light: #E0F7FA;
+  --color-navy: #0D1B2A;
+  --color-navy-light: #1A2D42;
+  --color-gray-light: #F5F7FA;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1F2937;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(255,255,255,0.85) 45%, rgba(255,255,255,0.2) 100%);
+}
+
+.hero-overlay-dark {
+  background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.section-badge {
+  display: inline-block;
+  color: #0CB4C4;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.btn-primary {
+  background-color: #0CB4C4;
+  color: white;
+  padding: 0.6rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0A9BAA;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #0CB4C4;
+  padding: 0.6rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #0CB4C4;
+}
+
+.btn-outline:hover {
+  background-color: #0CB4C4;
+  color: white;
+}
+
+.card-shadow {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
