@@ -19,14 +19,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[148px]">
+        <div className="flex items-center justify-between h-[100px]">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
               src="/assets/logos/TruCells_edited.png"
               alt="TruCells"
-              width={470}
-              height={132}
-              className="h-[132px] w-auto"
+              width={284}
+              height={80}
+              className="h-[80px] w-auto"
             />
           </Link>
 
