@@ -107,7 +107,7 @@ export default function AboutPage() {
                 img: "/assets/team/Brenda Ramirez.png",
               },
             ].map((member) => (
-              <div key={member.name} className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+              <div key={member.name} className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100" style={{ width: "315px", height: "375px" }}>
                 <div className="relative bg-gray-800" style={{ width: "273px", height: "273px" }}>
                   <Image
                     src={member.img}
