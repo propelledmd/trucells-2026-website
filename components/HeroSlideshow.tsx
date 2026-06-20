@@ -20,7 +20,7 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <section className="relative flex items-center overflow-hidden" style={{ minHeight: "82vh" }}>
+    <section className="relative flex items-center overflow-hidden" style={{ height: "834px" }}>
       {/* Background images */}
       {slides.map((src, i) => (
         <div
