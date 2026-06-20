@@ -33,7 +33,7 @@ export default function AboutPage() {
                 <span className="text-[#0CB4C4] text-xs font-bold uppercase tracking-[0.15em]">OUR HISTORY</span>
               </div>
 
-              <h1 style={{ fontFamily: "var(--font-raleway)", fontWeight: 900, fontSize: "clamp(3rem, 6vw, 5rem)", lineHeight: 1.05 }}>
+              <h1 style={{ fontFamily: "var(--font-inter)", fontWeight: 900, fontSize: "clamp(3rem, 6vw, 5rem)", lineHeight: 1.05 }}>
                 <span className="block text-gray-900">Redefining</span>
                 <span className="block text-[#0CB4C4]">Longevity</span>
               </h1>
@@ -119,7 +119,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-[#0CB4C4] mb-10 text-center"
-            style={{ fontFamily: "var(--font-raleway)", fontWeight: 900, fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)" }}
+            style={{ fontFamily: "var(--font-inter)", fontWeight: 900, fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)" }}
           >
             Why TruCells Matters
           </h2>

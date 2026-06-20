@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
-import { Raleway, Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const raleway = Raleway({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-raleway",
-  display: "swap",
-});
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-open-sans",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -29,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.variable} ${openSans.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-1">{children}</main>
