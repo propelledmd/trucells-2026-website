@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero — split: heading left, white text card right */}
-      <section className="relative min-h-[520px] flex items-center overflow-hidden">
+      <section className="relative flex items-center overflow-hidden" style={{ height: "947px" }}>
         <Image
           src="/assets/images/backgrounds/Redefining Longevity.png"
           alt="Redefining Longevity"
@@ -20,6 +20,13 @@ export default function AboutPage() {
           priority
         />
         <div className="absolute inset-0 bg-white/20" />
+
+        {/* Inverted ellipse shape divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+          <svg viewBox="0 0 1440 110" preserveAspectRatio="none" className="w-full block" style={{ height: "110px" }} xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,110 C360,0 1080,0 1440,110 L1440,110 L0,110 Z" fill="white" />
+          </svg>
+        </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
