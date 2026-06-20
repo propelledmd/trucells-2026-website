@@ -19,7 +19,6 @@ export default function AboutPage() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-white/20" />
 
         {/* Inverted ellipse shape divider */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
