@@ -83,7 +83,7 @@ export default function PlatformPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xs text-gray-500 leading-relaxed">
             <div className="flex items-start gap-3">
-              <Image src="/assets/logos/TruCells.png" alt="TruCells" width={100} height={30} className="h-8 w-auto flex-shrink-0" />
+              <Image src="/assets/logos/TruCells_edited.png" alt="TruCells" width={100} height={30} className="h-8 w-auto flex-shrink-0" />
               <div>
                 <p className="font-semibold text-gray-700 mb-1">4400 Piedras Drive South</p>
                 <p>San Antonio, TX 78228</p>

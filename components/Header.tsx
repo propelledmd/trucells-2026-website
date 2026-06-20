@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
-              src="/assets/logos/TruCells.png"
+              src="/assets/logos/TruCells_edited.png"
               alt="TruCells"
               width={140}
               height={40}

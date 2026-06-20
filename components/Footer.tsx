@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <Image
-              src="/assets/logos/TruCells.png"
+              src="/assets/logos/TruCells_edited.png"
               alt="TruCells"
               width={130}
               height={38}
-              className="h-10 w-auto brightness-0 invert mb-4"
+              className="h-10 w-auto mb-4"
             />
             <p className="text-sm text-gray-400 leading-relaxed">
               4400 Piedras Drive South<br />
