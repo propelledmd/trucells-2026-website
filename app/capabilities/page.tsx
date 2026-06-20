@@ -50,11 +50,11 @@ export default function CapabilitiesPage() {
               </div>
             </div>
 
-            {/* Right: scientists lab photo */}
+            {/* Right: clean biomanufacturing lab */}
             <div className="relative rounded-2xl overflow-hidden card-shadow" style={{ height: "420px" }}>
               <Image
-                src="/assets/images/CDMO Partner.png"
-                alt="TruCells CDMO biomanufacturing team"
+                src="/assets/images/ChatGPT Image Feb 12, 2026, 10_43_36 PM.png"
+                alt="TruCells biomanufacturing facility"
                 fill
                 className="object-cover"
               />
@@ -71,7 +71,7 @@ export default function CapabilitiesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden card-shadow" style={{ height: "360px" }}>
               <Image
-                src="/assets/images/TruCells cGMP Facility Space.jpg"
+                src="/assets/images/CDMO Partner.png"
                 alt="cGMP Facility Space"
                 fill
                 className="object-cover"
