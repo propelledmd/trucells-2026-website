@@ -10,8 +10,8 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* Hero — split: heading left, white text card right */}
-      <section className="relative flex items-center overflow-hidden" style={{ height: "947px" }}>
+      {/* Hero */}
+      <section className="relative overflow-hidden" style={{ height: "947px" }}>
         <Image
           src="/assets/images/backgrounds/Redefining Longevity.png"
           alt="Redefining Longevity"
@@ -20,47 +20,57 @@ export default function AboutPage() {
           priority
         />
 
-        {/* Inverted ellipse shape divider */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
-          <svg viewBox="0 0 1440 110" preserveAspectRatio="none" className="w-full block" style={{ height: "110px" }} xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,110 C360,0 1080,0 1440,110 L1440,110 L0,110 Z" fill="white" />
-          </svg>
+        {/* Title — X:31 Y:214, Inter 800, 73px */}
+        <div className="absolute z-10" style={{ left: "31px", top: "214px" }}>
+          <div className="inline-flex items-center gap-1.5 bg-[#0CB4C4]/15 border border-[#0CB4C4]/40 rounded-full px-3 py-1 mb-4">
+            <svg className="w-3 h-3 text-[#0CB4C4]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+            </svg>
+            <span className="text-[#0CB4C4] text-xs font-bold uppercase tracking-[0.15em]">OUR HISTORY</span>
+          </div>
+          <h1 style={{ fontFamily: "var(--font-inter)", fontWeight: 800, fontSize: "73px", lineHeight: 1.05 }}>
+            <span className="block text-gray-900">Redefining</span>
+            <span className="block text-[#0CB4C4]">Longevity</span>
+          </h1>
+          <div className="mt-3 w-16 h-1 bg-[#0CB4C4] rounded-full" />
         </div>
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-            {/* Left: badge + heading + teal underline */}
-            <div>
-              <div className="inline-flex items-center gap-1.5 bg-[#0CB4C4]/15 border border-[#0CB4C4]/40 rounded-full px-3 py-1 mb-5">
-                <svg className="w-3 h-3 text-[#0CB4C4]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-[#0CB4C4] text-xs font-bold uppercase tracking-[0.15em]">OUR HISTORY</span>
-              </div>
-
-              <h1 style={{ fontFamily: "var(--font-inter)", fontWeight: 900, fontSize: "clamp(3rem, 6vw, 5rem)", lineHeight: 1.05 }}>
-                <span className="block text-gray-900">Redefining</span>
-                <span className="block text-[#0CB4C4]">Longevity</span>
-              </h1>
-              <div className="mt-3 w-16 h-1 bg-[#0CB4C4] rounded-full" />
-            </div>
-
-            {/* Right: white card */}
-            <div className="bg-white rounded-2xl shadow-lg p-7">
-              <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                Founded in 2021 in San Antonio, Texas, TruCells was created to bridge today&apos;s clinical needs with
-                tomorrow&apos;s medical breakthroughs. We specialize in cryopreserving bone marrow aspirate (BMA)
-                collected during elective procedures such as Total Hip Replacement, Total Knee Replacement, and select
-                Spinal Fusion surgeries.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                By safeguarding these cells in our purpose-built, cGMP-compliant biomanufacturing facility, we preserve
-                each patient&apos;s regenerative potential for years to come. Our research team is advancing mesenchymal
-                stem cell (MSC) expansion—a critical step toward next-generation therapies.
-              </p>
-            </div>
+        {/* Glass card — X:527 Y:173, W:441 H:498, Inter Regular 16px */}
+        <div
+          className="absolute z-10 rounded-2xl"
+          style={{
+            left: "527px",
+            top: "173px",
+            width: "441px",
+            height: "498px",
+            backdropFilter: "blur(14px)",
+            WebkitBackdropFilter: "blur(14px)",
+            background: "rgba(255,255,255,0.22)",
+            border: "1px solid rgba(255,255,255,0.35)",
+          }}
+        >
+          <div className="p-8 h-full overflow-y-auto">
+            <p style={{ fontFamily: "var(--font-inter)", fontWeight: 400, fontSize: "16px", lineHeight: 1.75, color: "#1F2937", marginBottom: "1.25rem" }}>
+              Founded in 2021 in San Antonio, Texas, TruCells was created to connect today&apos;s planned procedures
+              with tomorrow&apos;s regenerative medicine possibilities. We specialize in cryopreserving a unique source
+              of bone marrow tissue collected during elective procedures, including Total Hip Replacement, Total Knee
+              Replacement, and select spinal surgeries.
+            </p>
+            <p style={{ fontFamily: "var(--font-inter)", fontWeight: 400, fontSize: "16px", lineHeight: 1.75, color: "#1F2937" }}>
+              Because you already have these powerful cells within you, preserving them today may help support your
+              future health trajectory. By safeguarding each patient&apos;s cells in our purpose-built,
+              cGMP-compliant biomanufacturing facility, TruCells helps preserve regenerative potential for years to
+              come as stem cell therapies continue to advance for areas such as neurological, cardiac, and metabolic
+              conditions.
+            </p>
           </div>
+        </div>
+
+        {/* Flipped inverted ellipse — white fills corners, hero arches down through center */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+          <svg viewBox="0 0 1440 110" preserveAspectRatio="none" className="w-full block" style={{ height: "110px" }} xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C360,110 1080,110 1440,0 L1440,110 L0,110 Z" fill="white" />
+          </svg>
         </div>
       </section>
 
