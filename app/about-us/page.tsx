@@ -108,7 +108,7 @@ export default function AboutPage() {
               },
             ].map((member) => (
               <div key={member.name} className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
-                <div className="relative bg-gray-800" style={{ width: "315px", height: "378px" }}>
+                <div className="relative bg-gray-800" style={{ width: "315px", height: "250px" }}>
                   <Image
                     src={member.img}
                     alt={member.name}
