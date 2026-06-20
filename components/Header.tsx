@@ -24,9 +24,9 @@ export default function Header() {
             <Image
               src="/assets/logos/TruCells_edited.png"
               alt="TruCells"
-              width={200}
-              height={58}
-              className="h-14 w-auto"
+              width={235}
+              height={66}
+              className="h-[66px] w-auto"
             />
           </Link>
 
