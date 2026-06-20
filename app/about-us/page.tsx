@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/Redefining Longevity.png"
+          src="/assets/images/backgrounds/Redefining Longevity.png"
           alt="Redefining Longevity"
           fill
           className="object-cover object-center"

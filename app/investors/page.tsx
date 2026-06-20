@@ -12,7 +12,7 @@ export default function InvestorsPage() {
       {/* Hero */}
       <section className="relative min-h-[440px] flex items-center overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/Investor.png"
+          src="/assets/images/backgrounds/Investor.png"
           alt="Investor Relations"
           fill
           className="object-cover object-center"

@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-[520px] flex items-center overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/TruCells Hero.png"
+          src="/assets/images/backgrounds/TruCells Hero.png"
           alt="TruCells - Preserve Your Body's Natural Healing Power"
           fill
           className="object-cover object-center"
@@ -77,7 +77,7 @@ export default function HomePage() {
       {/* Our Mission */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/Our Mission.png"
+          src="/assets/images/backgrounds/Our Mission.png"
           alt="Our Mission"
           fill
           className="object-cover object-center"
@@ -133,7 +133,7 @@ export default function HomePage() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/assets/images/Backgrounds/Partnership.png"
+              src="/assets/images/backgrounds/Partnership.png"
               alt="Nationwide Partnerships"
               width={900}
               height={300}

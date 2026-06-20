@@ -12,7 +12,7 @@ export default function PlatformPage() {
       {/* Hero */}
       <section className="relative min-h-[460px] flex items-center overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/TruCells Platform.png"
+          src="/assets/images/backgrounds/TruCells Platform.png"
           alt="The TruCells Platform"
           fill
           className="object-cover object-center"

@@ -27,7 +27,7 @@ export default function CareersPage() {
       {/* Hero */}
       <section className="relative min-h-[360px] flex items-center overflow-hidden">
         <Image
-          src="/assets/images/Backgrounds/TruCells Office.png"
+          src="/assets/images/backgrounds/TruCells Office.png"
           alt="Careers at TruCells"
           fill
           className="object-cover object-center"

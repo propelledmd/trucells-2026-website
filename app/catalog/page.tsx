@@ -51,7 +51,7 @@ export default function CatalogPage() {
     <>
       {/* Hero */}
       <section className="relative h-40 overflow-hidden">
-        <Image src="/assets/images/Backgrounds/Catalog Products.jpg" alt="Products" fill className="object-cover" />
+        <Image src="/assets/images/backgrounds/Catalog Products.jpg" alt="Products" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-6">
           <nav className="text-white text-xs flex gap-2 items-center">
@@ -122,7 +122,7 @@ export default function CatalogPage() {
 
       {/* Compliance Banner */}
       <section className="relative py-16 overflow-hidden">
-        <Image src="/assets/images/Backgrounds/TruCells (2).png" alt="Rigorous Regulatory Compliance" fill className="object-cover" />
+        <Image src="/assets/images/backgrounds/TruCells (2).png" alt="Rigorous Regulatory Compliance" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Rigorous Regulatory Compliance</h2>
