@@ -13,10 +13,10 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ height: "947px" }}>
         <Image
-          src="/assets/images/backgrounds/Redefining Longevity.png"
+          src="/assets/images/backgrounds/About Hero.png"
           alt="Redefining Longevity"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
 
