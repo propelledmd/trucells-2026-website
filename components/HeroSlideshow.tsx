@@ -20,7 +20,8 @@ export default function HeroSlideshow() {
   }, []);
 
   return (
-    <section className="relative min-h-[540px] flex items-center overflow-hidden">
+    <section className="relative flex items-center overflow-hidden" style={{ minHeight: "82vh" }}>
+      {/* Background images */}
       {slides.map((src, i) => (
         <div
           key={src}
@@ -29,7 +30,7 @@ export default function HeroSlideshow() {
         >
           <Image
             src={src}
-            alt="TruCells"
+            alt="TruCells hero"
             fill
             className="object-cover object-center"
             priority={i === 0}
@@ -37,36 +38,75 @@ export default function HeroSlideshow() {
         </div>
       ))}
 
-      {/* Text — left-anchored with text-shadow for legibility over any photo */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
-        <div className="max-w-lg">
-          <h1
-            className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5"
-            style={{ textShadow: "0 2px 12px rgba(0,0,0,0.45)" }}
-          >
-            Preserve Your Body&apos;s{" "}
-            <span className="text-[#0CB4C4]">Natural Healing Power</span>
+      {/* Text content — left-anchored */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-28">
+        <div className="max-w-xl">
+          {/* Badge */}
+          <div className="flex items-center gap-2 mb-5">
+            <svg className="w-3.5 h-3.5 text-[#0CB4C4]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+            </svg>
+            <span className="text-[#0CB4C4] text-xs font-bold uppercase tracking-[0.18em]">
+              Advancing Regenerative Medicine
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="font-bold leading-[1.05] mb-6" style={{ fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)" }}>
+            <span
+              className="block text-white"
+              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}
+            >
+              Preserve Your
+            </span>
+            <span
+              className="block text-white"
+              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}
+            >
+              Body&apos;s{" "}
+              <span className="text-[#0CB4C4]">Natural</span>
+            </span>
+            <span
+              className="block text-[#0CB4C4]"
+              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.4)" }}
+            >
+              Healing Power
+            </span>
           </h1>
+
+          {/* Sub-text */}
           <p
-            className="text-white text-base leading-relaxed mb-8"
-            style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}
+            className="text-white text-base leading-relaxed mb-9 max-w-sm"
+            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}
           >
-            TruCells makes it simple to bank your own stem cells during surgeries you&apos;re already planning — storing your regenerative potential for the future.
+            TruCells helps you safely collect and store your own stem cells during procedures you are already planning so you are prepared for the future of medicine.
           </p>
+
+          {/* Buttons */}
           <div className="flex flex-wrap gap-4">
-            <Link href="/about-us" className="btn-primary">Learn More</Link>
-            <Link href="/capabilities" className="btn-outline" style={{ borderColor: "white", color: "white" }}>Our Capabilities</Link>
+            <Link href="/about-us" className="btn-primary text-sm px-6 py-2.5">
+              Learn About Stem cell Banking &rsaquo;
+            </Link>
+            <Link
+              href="/platform"
+              className="text-sm font-semibold px-6 py-2.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-colors"
+            >
+              For Physicians
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2.5 z-10">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? "bg-[#0CB4C4]" : "bg-white/60"}`}
+            aria-label={`Slide ${i + 1}`}
+            className={`w-2.5 h-2.5 rounded-full transition-all ${
+              i === current ? "bg-[#0CB4C4] scale-110" : "bg-white/50"
+            }`}
           />
         ))}
       </div>
