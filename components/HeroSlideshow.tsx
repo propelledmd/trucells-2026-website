@@ -32,15 +32,22 @@ export default function HeroSlideshow() {
             src={src}
             alt="TruCells hero"
             fill
-            className="object-cover object-center"
+            className="object-cover object-top"
             priority={i === 0}
           />
         </div>
       ))}
 
-      {/* Text content — left-anchored */}
+      {/* Very subtle left scrim so dark text reads on any photo */}
+      <div
+        className="absolute inset-0"
+        style={{ background: "linear-gradient(to right, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.25) 45%, transparent 70%)" }}
+      />
+
+      {/* Text content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-28">
         <div className="max-w-xl">
+
           {/* Badge */}
           <div className="flex items-center gap-2 mb-5">
             <svg className="w-3.5 h-3.5 text-[#0CB4C4]" fill="currentColor" viewBox="0 0 20 20">
@@ -51,34 +58,17 @@ export default function HeroSlideshow() {
             </span>
           </div>
 
-          {/* Headline */}
-          <h1 className="font-bold leading-[1.05] mb-6" style={{ fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)" }}>
-            <span
-              className="block text-white"
-              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}
-            >
-              Preserve Your
+          {/* Headline — dark text with tight line-height, "Natural Healing Power" in teal */}
+          <h1 className="font-black leading-[1.08] mb-6" style={{ fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)" }}>
+            <span className="block text-gray-900">Preserve Your</span>
+            <span className="block text-gray-900">
+              Body&apos;s <span className="text-[#0CB4C4]">Natural</span>
             </span>
-            <span
-              className="block text-white"
-              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}
-            >
-              Body&apos;s{" "}
-              <span className="text-[#0CB4C4]">Natural</span>
-            </span>
-            <span
-              className="block text-[#0CB4C4]"
-              style={{ textShadow: "0 2px 14px rgba(0,0,0,0.4)" }}
-            >
-              Healing Power
-            </span>
+            <span className="block text-[#0CB4C4]">Healing Power</span>
           </h1>
 
-          {/* Sub-text */}
-          <p
-            className="text-white text-base leading-relaxed mb-9 max-w-sm"
-            style={{ textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}
-          >
+          {/* Sub-text — dark */}
+          <p className="text-gray-800 text-base leading-relaxed mb-9 max-w-sm">
             TruCells helps you safely collect and store your own stem cells during procedures you are already planning so you are prepared for the future of medicine.
           </p>
 
@@ -89,7 +79,7 @@ export default function HeroSlideshow() {
             </Link>
             <Link
               href="/platform"
-              className="text-sm font-semibold px-6 py-2.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-colors"
+              className="text-sm font-semibold px-6 py-2.5 rounded-full bg-white/80 text-gray-800 hover:bg-white transition-colors border border-gray-200"
             >
               For Physicians
             </Link>
@@ -105,7 +95,7 @@ export default function HeroSlideshow() {
             onClick={() => setCurrent(i)}
             aria-label={`Slide ${i + 1}`}
             className={`w-2.5 h-2.5 rounded-full transition-all ${
-              i === current ? "bg-[#0CB4C4] scale-110" : "bg-white/50"
+              i === current ? "bg-[#0CB4C4] scale-110" : "bg-white/60"
             }`}
           />
         ))}
