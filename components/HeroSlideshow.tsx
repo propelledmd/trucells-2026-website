@@ -58,8 +58,8 @@ export default function HeroSlideshow() {
             </span>
           </div>
 
-          {/* Headline — dark text with tight line-height, "Natural Healing Power" in teal */}
-          <h1 className="font-black leading-[1.08] mb-6" style={{ fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)" }}>
+          {/* Headline */}
+          <h1 className="leading-[1.08] mb-6" style={{ fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)", fontFamily: "var(--font-raleway)", fontWeight: 900 }}>
             <span className="block text-gray-900">Preserve Your</span>
             <span className="block text-gray-900">
               Body&apos;s <span className="text-[#0CB4C4]">Natural</span>
