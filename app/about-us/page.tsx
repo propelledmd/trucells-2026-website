@@ -40,19 +40,18 @@ export default function AboutPage() {
             <div className="mt-4 w-16 h-1 bg-[#0CB4C4] rounded-full" />
           </div>
 
-          {/* Right: glass card — W:441 H:498 */}
+          {/* Right: glass card — W:441, height auto-grows to fit content */}
           <div
             className="rounded-2xl flex-shrink-0"
             style={{
               width: "441px",
-              height: "498px",
               backdropFilter: "blur(14px)",
               WebkitBackdropFilter: "blur(14px)",
               background: "rgba(255,255,255,0.22)",
               border: "1px solid rgba(255,255,255,0.35)",
             }}
           >
-            <div className="p-8 h-full overflow-y-auto">
+            <div className="p-8">
               <p style={{ fontFamily: "var(--font-inter)", fontWeight: 400, fontSize: "16px", lineHeight: 1.75, color: "#1F2937", marginBottom: "1.25rem" }}>
                 Founded in 2021 in San Antonio, Texas, TruCells was created to connect today&apos;s planned procedures
                 with tomorrow&apos;s regenerative medicine possibilities. We specialize in cryopreserving a unique

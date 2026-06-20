@@ -95,28 +95,35 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
-                icon: "📋",
+                num: "01",
                 title: "Financial Agreement & Enrollment",
                 desc: "Review terms, complete enrollment, and secure your spot in the TruCells banking program.",
               },
               {
-                icon: "🏥",
+                num: "02",
                 title: "Surgical Collection",
                 desc: "Your physician collects bone marrow aspirate during your already-scheduled elective surgery — no added burden or surgical time.",
               },
               {
-                icon: "🔬",
+                num: "03",
                 title: "Laboratory Processing",
                 desc: "Your cells are transported to our cGMP facility, processed, characterized, and cryopreserved to the highest standards.",
               },
               {
-                icon: "❄️",
+                num: "04",
                 title: "Cryogenic Storage Confirmation",
                 desc: "Your cells are securely stored in our cryogenic facility with annual renewal — ready when regenerative therapies advance.",
               },
             ].map((step) => (
-              <div key={step.title} className="bg-white rounded-xl p-6 card-shadow border border-gray-100">
-                <div className="text-3xl mb-3">{step.icon}</div>
+              <div key={step.title} className="bg-white rounded-xl p-6 card-shadow border border-gray-100 flex flex-col">
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center mb-4 flex-shrink-0"
+                  style={{ background: "#0CB4C4" }}
+                >
+                  <span style={{ fontFamily: "var(--font-inter)", fontWeight: 800, fontSize: "14px", color: "white" }}>
+                    {step.num}
+                  </span>
+                </div>
                 <h3 className="font-bold text-gray-900 text-sm mb-2 leading-snug">{step.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{step.desc}</p>
               </div>
